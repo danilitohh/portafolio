@@ -40,23 +40,18 @@ export default function Carousel() {
         className="w-full h-full"
       >
         {images.map((src, idx) => (
-<<<<<<< HEAD
-          <SwiperSlide key={idx}>
-            <img src={src} alt={`Proyecto ${idx + 1}`} className="w-full h-full object-cover" />
-=======
           <SwiperSlide key={idx} className="w-full h-full">
             <div className="relative w-full h-full">
-              <img 
-                src={src} 
-                alt={`Proyecto ${idx + 1}`} 
+              <img
+                src={src}
+                alt={`Proyecto ${idx + 1}`}
                 className="w-full h-full object-contain md:object-cover"
                 style={{ maxHeight: '100vh' }}
               />
             </div>
->>>>>>> af8293d (feat: mejoras responsive en carousel y navbar, y soporte client component)
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
   );
-} 
+}
