@@ -292,7 +292,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="font-helvetica text-4xl font-extrabold text-gray-900 sm:text-5xl">
-              Perfil Profesional
+              Sobre Mí
             </h2>
           </div>
           <div
@@ -304,19 +304,26 @@ export default function Home() {
             }}
           >
             <p className="mb-6 font-medium">
-              Delineante con enfoque en BIM, modelado y procesos
-              constructivos, apasionado por la arquitectura, el arte y la
-              tecnología.
+              Soy delineante y modelador BIM, especializado en la documentación
+              técnica y el desarrollo de modelos 3D para proyectos de
+              arquitectura, ingeniería y construcción. Mi trabajo se enfoca en
+              transformar ideas y diseños en representaciones digitales
+              precisas, organizadas y listas para su ejecución, facilitando la
+              coordinación entre disciplinas y optimizando los procesos
+              constructivos.
             </p>
             <p className="mb-6 font-medium">
-              Perfil autodidacta, creativo y orientado a la mejora continua,
-              con experiencia en documentación técnica, levantamientos As-Built,
-              coordinación BIM y representación arquitectónica.
+              Aquí encontrarás una muestra de mi experiencia colaborando con
+              profesionales del sector AEC, aportando valor desde el modelado,
+              la documentación y el cumplimiento de estándares BIM.
             </p>
             <p className="font-medium">
-              Mi interés está en seguir desarrollándome como arquitecto
-              integral, aportando precisión técnica, criterio visual y orden en
-              cada etapa del proyecto.
+              Soy reconocido por mi dinamismo y creatividad en la resolución de
+              desafíos, con un firme interés en seguir adquiriendo nuevos
+              conocimientos para fortalecer mi desempeño laboral y mi
+              crecimiento personal. Mi habilidad para trabajar en equipo se ve
+              respaldada por mi capacidad empática y mi excelente disposición
+              para colaborar eficazmente en entornos colaborativos.
             </p>
           </div>
         </div>
