@@ -17,6 +17,8 @@ export default function ProjectCard({ title, description, imageUrl, tags, link }
           src={imageUrl}
           alt={title}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 384px"
+          quality={72}
           className="object-cover"
         />
       </div>
@@ -57,4 +59,4 @@ export default function ProjectCard({ title, description, imageUrl, tags, link }
       </div>
     </div>
   )
-} 
+}

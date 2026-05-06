@@ -1,4 +1,6 @@
 "use client";
+
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -8,7 +10,6 @@ import "swiper/css/pagination";
 const images = [
   "/projects/portafolio-1.jpg",
   "/projects/portafolio-2.jpg",
-  "/projects/portafolio-3.jpg",
   "/projects/portafolio-4.jpg",
   "/projects/portafolio-5.jpg",
   "/projects/portafolio-6.jpg",
@@ -36,17 +37,22 @@ export default function Carousel() {
         navigation={true}
         pagination={{ clickable: true }}
         autoplay={{ delay: 6000, disableOnInteraction: false }}
+        lazyPreloadPrevNext={1}
         loop
         className="w-full h-full"
       >
         {images.map((src, idx) => (
           <SwiperSlide key={idx} className="w-full h-full">
-            <div className="relative w-full h-full">
-              <img 
-                src={src} 
-                alt={`Proyecto ${idx + 1}`} 
+            <div className="relative w-full h-full bg-gray-900">
+              <Image
+                src={src}
+                alt={`Proyecto ${idx + 1}`}
+                fill
+                sizes="100vw"
+                quality={72}
+                priority={idx === 0}
+                loading={idx === 0 ? "eager" : "lazy"}
                 className="w-full h-full object-contain md:object-cover"
-                style={{ maxHeight: '100vh' }}
               />
             </div>
           </SwiperSlide>
@@ -54,4 +60,4 @@ export default function Carousel() {
       </Swiper>
     </div>
   );
-} 
+}
