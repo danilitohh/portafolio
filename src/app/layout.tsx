@@ -4,8 +4,9 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portafolio de Arquitectura",
-  description: "Portafolio profesional de Santiago Ramirez Cardona - Delineante de Arquitectura",
+  title: "Santiago Ramírez | Portafolio",
+  description:
+    "Portafolio profesional de Santiago Ramírez, delineante arquitectónico, modelador BIM y visualizador 3D.",
 };
 
 export default function RootLayout({
